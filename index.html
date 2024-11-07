@@ -12,20 +12,34 @@
     </script>
 
     <title>Meme Driven Development (MDD)</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            text-align: center;
         }
 
-         .container {
-            max-width: 600px; /* Set the maximum width */
+        .github-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: black;
+                color: black;
+            }
+
+            .github-icon:hover {
+                color: orangered;
+        }
+
+        .container {
+            max-width: 800px; /* Set the maximum width */
             margin: 0 auto; /* Center the container */
             padding: 20px;
         }
         
-        .hero {
+        .hero img {
             max-width: 300px;
         }
 
@@ -39,13 +53,13 @@
         }
 
         .caption {
-            font-weight: bold;
+            font-size: small;
+            font-style: italic;  
             margin-top: 10px;
         }
 
         ul {
             margin-bottom: 20px;
-            list-style-type: none; /* Hides the bullet points */
         }
 
         hr {
@@ -57,8 +71,15 @@
 <body>
     <div class="container">
         <h1>Meme Driven Development (MDD)</h1>
-        <img src="./images/book.jpg" alt="Meme Driven Development" class="hero">
-        <p><small><em>Image courtesy of <a href="https://www.linkedin.com/posts/javascript-developer_activity-7260210608384438273-hRpv" target="_blank">JavaScript Developer</a></em></small></p>
+
+        <a href="https://github.com/setchy/meme-driven.dev" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        
+        <div class="hero">
+            <img src="./images/book.jpg" alt="Meme Driven Development" class="hero">
+            <div class="caption">Image courtesy of <a href="https://www.linkedin.com/posts/javascript-developer_activity-7260210608384438273-hRpv" target="_blank">JavaScript Developer</a></div>
+        </div>
 
         <hr />
 
@@ -134,31 +155,31 @@
         <h1>Meme Driven Development (MDD) Examples</h1>
         
         <div class="meme">
-            <h2>Before Coding</h2>
+            <h3>Before Coding</h3>
             <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Distracted Boyfriend Meme">
             <p class="caption">Developer looking at "New Feature" while ignoring "Existing Bugs".</p>
         </div>
         
         <div class="meme">
-            <h2>Pull Request Feedback</h2>
+            <h3>Pull Request Feedback</h3>
             <img src="https://i.imgflip.com/30b1gx.jpg" alt="Drake Hotline Bling Meme">
             <p class="caption">Drake rejecting "Messy Code" and approving "Clean, Refactored Code".</p>
         </div>
         
         <div class="meme">
-            <h2>Daily Stand-up</h2>
+            <h3>Daily Stand-up</h3>
             <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme">
             <p class="caption">"Finally fixed that bug!"</p>
         </div>
         
         <div class="meme">
-            <h2>Sprint Review</h2>
+            <h3>Sprint Review</h3>
             <img src="https://i.imgflip.com/2wifvo.jpg" alt="Leonardo DiCaprio Cheers Meme">
             <p class="caption">"To a successful deployment!"</p>
         </div>
         
         <div class="meme">
-            <h2>Retrospective</h2>
+            <h3>Retrospective</h3>
             <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme">
             <p class="caption">"When the sprint starts smoothly but ends in chaos".</p>
         </div>
