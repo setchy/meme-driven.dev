@@ -27,12 +27,12 @@
             font-size: 24px;
             color: black;
                 color: black;
-            }
-
-            .github-icon:hover {
-                color: orangered;
         }
 
+        .github-icon:hover {
+            color: orangered;
+        }
+        
         .container {
             max-width: 800px; /* Set the maximum width */
             margin: 0 auto; /* Center the container */
@@ -41,6 +41,12 @@
         
         .hero img {
             max-width: 300px;
+        }
+
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
 
         .meme {
@@ -56,6 +62,8 @@
             font-size: small;
             font-style: italic;  
             margin-top: 10px;
+            max-width: 300px;
+
         }
 
         ul {
@@ -154,34 +162,36 @@
 
         <h1>Meme Driven Development (MDD) Examples</h1>
         
-        <div class="meme">
-            <h3>Before Coding</h3>
-            <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Distracted Boyfriend Meme">
-            <p class="caption">Developer looking at "New Feature" while ignoring "Existing Bugs".</p>
-        </div>
-        
-        <div class="meme">
-            <h3>Pull Request Feedback</h3>
-            <img src="https://i.imgflip.com/30b1gx.jpg" alt="Drake Hotline Bling Meme">
-            <p class="caption">Drake rejecting "Messy Code" and approving "Clean, Refactored Code".</p>
-        </div>
-        
-        <div class="meme">
-            <h3>Daily Stand-up</h3>
-            <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme">
-            <p class="caption">"Finally fixed that bug!"</p>
-        </div>
-        
-        <div class="meme">
-            <h3>Sprint Review</h3>
-            <img src="https://i.imgflip.com/2wifvo.jpg" alt="Leonardo DiCaprio Cheers Meme">
-            <p class="caption">"To a successful deployment!"</p>
-        </div>
-        
-        <div class="meme">
-            <h3>Retrospective</h3>
-            <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme">
-            <p class="caption">"When the sprint starts smoothly but ends in chaos".</p>
+        <div class="meme-grid">
+            <div class="meme">
+                <h3>Before Coding</h3>
+                <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Distracted Boyfriend Meme">
+                <p class="caption">Developer looking at "New Feature" while ignoring "Existing Bugs".</p>
+            </div>
+            
+            <div class="meme">
+                <h3>Pull Request Feedback</h3>
+                <img src="https://i.imgflip.com/30b1gx.jpg" alt="Drake Hotline Bling Meme">
+                <p class="caption">Drake rejecting "Messy Code" and approving "Clean, Refactored Code".</p>
+            </div>
+            
+            <div class="meme">
+                <h3>Daily Stand-up</h3>
+                <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme">
+                <p class="caption">"Finally fixed that bug!"</p>
+            </div>
+            
+            <div class="meme">
+                <h3>Sprint Review</h3>
+                <img src="https://i.imgflip.com/2wifvo.jpg" alt="Leonardo DiCaprio Cheers Meme">
+                <p class="caption">"To a successful deployment!"</p>
+            </div>
+            
+            <div class="meme">
+                <h3>Retrospective</h3>
+                <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme">
+                <p class="caption">"When the sprint starts smoothly but ends in chaos".</p>
+            </div>
         </div>
     </div>
 </body>
