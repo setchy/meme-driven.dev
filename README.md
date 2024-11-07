@@ -1,3 +1,3 @@
 # meme-driven.dev
 
-Meme Driven Development
+Meme Driven Development (MDD) - A novel (and fun) approach to software development.
