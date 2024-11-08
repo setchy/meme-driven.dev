@@ -4,250 +4,204 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-736BKHY5WS"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-736BKHY5WS');
+        gtag('config', 'G-736BKHY5WS');
     </script>
 
     <title>Meme Driven Development (MDD)</title>
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Meme Driven Development (MDD)">
-    <meta property="og:description"
-        content="A novel (and fun) approach to modern software development.">
+    <meta property="og:description" content="A novel (and fun) approach to modern software development.">
     <meta property="og:image" content="https://meme-driven.dev/images/book.jpg">
     <meta property="og:url" content="https://meme-driven.dev">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        .github-icon {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-size: 24px;
-            color: black;
-                color: black;
-        }
-
-        .github-icon:hover {
-            color: orangered;
-        }
-        
-        .container {
-            max-width: 800px; /* Set the maximum width */
-            margin: 0 auto; /* Center the container */
-            padding: 20px;
-        }
-        
-        .hero img {
-            max-width: 300px;
-        }
-
-        .meme-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .meme {
-            margin-bottom: 20px;
-        }
-
-        .meme img {
-            max-width: 100px;
-            height: auto;
-            transition: max-width 0.3s ease;
-        }
-
-        .meme img:hover {
-            max-width: 200px;
-        }
-
-        .caption {
-            font-size: small;
-            font-style: italic;  
-            margin-top: 10px;
-            max-width: 300px;
-
-        }
-
-        ul {
-            margin-bottom: 20px;
-        }
-
-        hr {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Meme Driven Development (MDD)</h1>
+    <div class="site-grid">
+        <div class="blank-space"></div>
 
-        <a href="https://github.com/setchy/meme-driven.dev" class="github-icon" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        
-        <div class="hero">
-            <img src="./images/book.jpg" alt="Meme Driven Development" class="hero">
-            <div class="caption"><a href="https://www.reddit.com/r/ProgrammerHumor/comments/1gkd2bb/probablyanotsogoodidea/" target="_blank">Image source</a></div>
+        <div class="site-sidebar">
+            <h3>Site Contents</h3>
+            <div><a href="#manifesto">Manifesto</a></div>
+            <div><a href="#specification">Specification</a></div>
+            <div><a href="#examples">Examples</a></div>
         </div>
 
-        <hr />
-
-        <h1>Meme Driven Development Manifesto</h1>
-        
-        <p>We are uncovering better ways of developing software by creating and sharing memes. Through this work, we have come
-            to value:</p>
-        
-        <ul>
-            <li><strong>Memes over Documentation</strong><br>
-                That is, while there is value in comprehensive documentation, we value the creativity and engagement that memes
-                bring more.</li>
-        
-            <li><strong>Humor over Formality</strong><br>
-                That is, while formal communication has its place, we find that humor fosters a more collaborative and enjoyable
-                environment.</li>
-        
-            <li><strong>Visual Feedback over Textual Feedback</strong><br>
-                That is, while textual feedback is useful, we believe that visual feedback through memes is more impactful and
-                memorable.</li>
-        
-            <li><strong>Team Spirit over Individual Effort</strong><br>
-                That is, while individual contributions are important, we prioritize the collective spirit and camaraderie that
-                memes help build.</li>
-        </ul>
-        
-        <h2>Principles behind the Meme Driven Development Manifesto</h2>
-        
-        <ol>
-            <li>Our highest priority is to satisfy the team through early and continuous delivery of memes.</li>
-            <li>Welcome changing memes, even late in development. Memes harness change for the team's advantage.</li>
-            <li>Deliver memes frequently, from a couple of times a day to a couple of times a week, with a preference to the shorter timescale.</li>
-            <li>Business people and developers must work together daily throughout the project, sharing and enjoying memes.</li>
-            <li>Build projects around motivated individuals. Give them the environment and support they need, and trust them to create great memes.</li>
-            <li>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation, supplemented by memes.</li>
-            <li>Memes are the primary measure of progress.</li>
-            <li>Meme Driven Development promotes sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</li>
-            <li>Continuous attention to meme quality and meme design enhances agility.</li>
-            <li>Simplicity—the art of maximizing the amount of meme not done—is essential.</li>
-            <li>The best memes emerge from self-organizing teams.</li>
-            <li>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its meme creation and sharing accordingly.</li>
-        </ol>
-
-        <hr>
-
-        <h1>Meme Driven Development (MDD) Specification</h1>
-        
-        <h2>Introduction</h2>
-        <p>Meme Driven Development (MDD) is a novel approach to software development derived from Test Driven Development (TDD).
-            In MDD, developers are required to create and share memes before writing any code. Additionally, feedback on pull
-            requests and other forms of communication must be delivered in meme form. This specification outlines the
-            conventions and practices for adopting MDD in a development workflow.</p>
-        
-        <h2>Specification</h2>
-        
-        <h3>1. Meme Creation</h3>
-        <ul>
-            <li><strong>Purpose</strong>: Memes should encapsulate the essence of the task or problem at hand.</li>
-            <li><strong>Format</strong>: Memes can be in the form of images, GIFs, or short videos.</li>
-            <li><strong>Content</strong>: Memes must be relevant, respectful, and adhere to company policies on appropriate
-                content.</li>
-        </ul>
-        
-        <h3>2. Meme Before Code</h3>
-        <ul>
-            <li><strong>Requirement</strong>: Before any coding begins, a meme must be created and shared with the team.</li>
-            <li><strong>Approval</strong>: The meme must receive at least one thumbs-up (👍) from a team member to proceed with
-                coding.</li>
-            <li><strong>Documentation</strong>: The meme should be documented in the project management tool alongside the task
-                description.</li>
-        </ul>
-        
-        <h3>3. Meme Feedback on Pull Requests</h3>
-        <ul>
-            <li><strong>Submission</strong>: All feedback on pull requests must be provided in meme form.</li>
-            <li><strong>Clarity</strong>: Memes should clearly convey the feedback, whether it is approval, a request for
-                changes, or highlighting an issue.</li>
-            <li><strong>Constructiveness</strong>: Memes must be constructive and aim to improve the code quality and team
-                morale.</li>
-        </ul>
-        
-        <h3>4. Meme Communication</h3>
-        <ul>
-            <li><strong>Daily Stand-ups</strong>: Memes can be used to summarize daily updates or blockers.</li>
-            <li><strong>Sprint Reviews</strong>: Memes should be used to highlight key achievements and areas for improvement.
-            </li>
-            <li><strong>Retrospectives</strong>: Memes can be employed to reflect on the sprint and suggest actionable
-                improvements.</li>
-        </ul>
-        
-        <h3>5. Tools and Platforms</h3>
-        <ul>
-            <li><strong>Meme Creation Tools</strong>: Recommended tools include Meme Generator, Giphy, and Canva.</li>
-            <li><strong>Communication Platforms</strong>: Memes should be shared via Slack, Microsoft Teams, or the project
-                management tool in use.</li>
-        </ul>
-        
-        <h3>6. Compliance and Monitoring</h3>
-        <ul>
-            <li><strong>Adherence</strong>: All team members must adhere to the MDD practices.</li>
-            <li><strong>Monitoring</strong>: Regular audits should be conducted to ensure memes are being used appropriately and
-                effectively.</li>
-            <li><strong>Feedback</strong>: Continuous feedback on the MDD process should be encouraged to refine and improve the
-                practice.</li>
-        </ul>
-        
-        <h2>Conclusion</h2>
-        <p>Meme Driven Development aims to foster a creative and engaging environment for software development. By integrating
-            humor and visual communication, MDD enhances team collaboration and makes the development process more enjoyable.
-        </p>
-
-
-        <hr />
-
-        <h1>Meme Driven Development (MDD) Examples</h1>
-        
-        <div class="meme-grid">
-            <div class="meme">
-                <h3>Before Coding</h3>
-                <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Distracted Boyfriend Meme">
-                <p class="caption">Developer looking at "New Feature" while ignoring "Existing Bugs".</p>
+        <div class="site-main">
+            <div class="site-header">
+                <h1>Meme Driven Development (MDD)</h1>
+                <p>A novel (and fun) approach to modern software development</p>
+               
+                <img src="./images/book.jpg" alt="Meme Driven Development" class="hero">
+                <div class="caption" style="margin: 0 auto"><a href="https://www.reddit.com/r/ProgrammerHumor/comments/1gkd2bb/probablyanotsogoodidea/"
+                        target="_blank">Image source</a></div>
             </div>
             
-            <div class="meme">
-                <h3>Pull Request Feedback</h3>
-                <img src="https://i.imgflip.com/30b1gx.jpg" alt="Drake Hotline Bling Meme">
-                <p class="caption">Drake rejecting "Messy Code" and approving "Clean, Refactored Code".</p>
-            </div>
+            <hr />
+
+            <a id="manifesto"></a>
+            <h1>Meme Driven Development Manifesto</h1>
+            <p>We are uncovering better ways of developing software by creating and sharing memes. Through this work, we have come
+                to value:</p>
             
-            <div class="meme">
-                <h3>Daily Stand-up</h3>
-                <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme">
-                <p class="caption">"Finally fixed that bug!"</p>
-            </div>
+            <ul>
+                <li><strong>Memes over Documentation</strong><br>
+                    That is, while there is value in comprehensive documentation, we value the creativity and engagement that memes
+                    bring more.</li>
             
-            <div class="meme">
-                <h3>Sprint Review</h3>
-                <img src="https://i.imgflip.com/2wifvo.jpg" alt="Leonardo DiCaprio Cheers Meme">
-                <p class="caption">"To a successful deployment!"</p>
-            </div>
+                <li><strong>Humor over Formality</strong><br>
+                    That is, while formal communication has its place, we find that humor fosters a more collaborative and enjoyable
+                    environment.</li>
             
-            <div class="meme">
-                <h3>Retrospective</h3>
-                <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme">
-                <p class="caption">"When the sprint starts smoothly but ends in chaos".</p>
+                <li><strong>Visual Feedback over Textual Feedback</strong><br>
+                    That is, while textual feedback is useful, we believe that visual feedback through memes is more impactful and
+                    memorable.</li>
+            
+                <li><strong>Team Spirit over Individual Effort</strong><br>
+                    That is, while individual contributions are important, we prioritize the collective spirit and camaraderie that
+                    memes help build.</li>
+            </ul>
+            
+            <h2>Principles behind the Meme Driven Development Manifesto</h2>
+            
+            <ol>
+                <li>Our highest priority is to satisfy the team through early and continuous delivery of memes.</li>
+                <li>Welcome changing memes, even late in development. Memes harness change for the team's advantage.</li>
+                <li>Deliver memes frequently, from a couple of times a day to a couple of times a week, with a preference to the shorter timescale.</li>
+                <li>Business people and developers must work together daily throughout the project, sharing and enjoying memes.</li>
+                <li>Build projects around motivated individuals. Give them the environment and support they need, and trust them to create great memes.</li>
+                <li>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation, supplemented by memes.</li>
+                <li>Memes are the primary measure of progress.</li>
+                <li>Meme Driven Development promotes sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</li>
+                <li>Continuous attention to meme quality and meme design enhances agility.</li>
+                <li>Simplicity—the art of maximizing the amount of meme not done—is essential.</li>
+                <li>The best memes emerge from self-organizing teams.</li>
+                <li>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its meme creation and sharing accordingly.</li>
+            </ol>
+
+            <hr>
+
+            <a id="specification"></a>
+            <h1>Meme Driven Development (MDD) Specification</h1>
+            
+            <h2>Introduction</h2>
+            <p>Meme Driven Development (MDD) is a novel approach to software development derived from Test Driven Development (TDD).
+                In MDD, developers are required to create and share memes before writing any code. Additionally, feedback on pull
+                requests and other forms of communication must be delivered in meme form. This specification outlines the
+                conventions and practices for adopting MDD in a development workflow.</p>
+            
+            <h2>Specification</h2>
+            
+            <h3>1. Meme Creation</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Memes should encapsulate the essence of the task or problem at hand.</li>
+                <li><strong>Format</strong>: Memes can be in the form of images, GIFs, or short videos.</li>
+                <li><strong>Content</strong>: Memes must be relevant, respectful, and adhere to company policies on appropriate
+                    content.</li>
+            </ul>
+            
+            <h3>2. Meme Before Code</h3>
+            <ul>
+                <li><strong>Requirement</strong>: Before any coding begins, a meme must be created and shared with the team.</li>
+                <li><strong>Approval</strong>: The meme must receive at least one thumbs-up (👍) from a team member to proceed with
+                    coding.</li>
+                <li><strong>Documentation</strong>: The meme should be documented in the project management tool alongside the task
+                    description.</li>
+            </ul>
+            
+            <h3>3. Meme Feedback on Pull Requests</h3>
+            <ul>
+                <li><strong>Submission</strong>: All feedback on pull requests must be provided in meme form.</li>
+                <li><strong>Clarity</strong>: Memes should clearly convey the feedback, whether it is approval, a request for
+                    changes, or highlighting an issue.</li>
+                <li><strong>Constructiveness</strong>: Memes must be constructive and aim to improve the code quality and team
+                    morale.</li>
+            </ul>
+            
+            <h3>4. Meme Communication</h3>
+            <ul>
+                <li><strong>Daily Stand-ups</strong>: Memes can be used to summarize daily updates or blockers.</li>
+                <li><strong>Sprint Reviews</strong>: Memes should be used to highlight key achievements and areas for improvement.
+                </li>
+                <li><strong>Retrospectives</strong>: Memes can be employed to reflect on the sprint and suggest actionable
+                    improvements.</li>
+            </ul>
+            
+            <h3>5. Tools and Platforms</h3>
+            <ul>
+                <li><strong>Meme Creation Tools</strong>: Recommended tools include Meme Generator, Giphy, and Canva.</li>
+                <li><strong>Communication Platforms</strong>: Memes should be shared via Slack, Microsoft Teams, or the project
+                    management tool in use.</li>
+            </ul>
+            
+            <h3>6. Compliance and Monitoring</h3>
+            <ul>
+                <li><strong>Adherence</strong>: All team members must adhere to the MDD practices.</li>
+                <li><strong>Monitoring</strong>: Regular audits should be conducted to ensure memes are being used appropriately and
+                    effectively.</li>
+                <li><strong>Feedback</strong>: Continuous feedback on the MDD process should be encouraged to refine and improve the
+                    practice.</li>
+            </ul>
+            
+            <h2>Conclusion</h2>
+            <p>Meme Driven Development aims to foster a creative and engaging environment for software development. By integrating
+                humor and visual communication, MDD enhances team collaboration and makes the development process more enjoyable.
+            </p>
+
+
+            <hr />
+
+            <a id="examples"></a>
+            <h1>Meme Driven Development (MDD) Examples</h1>
+            
+            <div class="example-memes">
+                <div class="meme">
+                    <h3>Before Coding</h3>
+                    <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Distracted Boyfriend Meme">
+                    <p class="caption">Developer looking at "New Feature" while ignoring "Existing Bugs".</p>
+                </div>
+                
+                <div class="meme">
+                    <h3>Pull Request Feedback</h3>
+                    <img src="https://i.imgflip.com/30b1gx.jpg" alt="Drake Hotline Bling Meme">
+                    <p class="caption">Drake rejecting "Messy Code" and approving "Clean, Refactored Code".</p>
+                </div>
+                
+                <div class="meme">
+                    <h3>Daily Stand-up</h3>
+                    <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme">
+                    <p class="caption">"Finally fixed that bug!"</p>
+                </div>
+                
+                <div class="meme">
+                    <h3>Sprint Review</h3>
+                    <img src="https://i.imgflip.com/2wifvo.jpg" alt="Leonardo DiCaprio Cheers Meme">
+                    <p class="caption">"To a successful deployment!"</p>
+                </div>
+                
+                <div class="meme">
+                    <h3>Retrospective</h3>
+                    <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme">
+                    <p class="caption">"When the sprint starts smoothly but ends in chaos".</p>
+                </div>
             </div>
         </div>
+    
+        <div class="site-links">
+            <a href="https://github.com/setchy/meme-driven.dev" class="github-icon" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <div class="blank-space"></div>
     </div>
 </body>
 </html>

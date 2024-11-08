@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr 2fr 1fr;
+    gap: 50px;
+}
+
+.site-header {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.site-sidebar {
+    text-align: right;
+}
+
+.site-main {
+    margin: 0 auto;
+}
+
+.site-main img {
+    max-width: 300px;
+}
+
+.site-links {
+    text-align: left;
+}
+
+.github-icon {
+    position: fixed;
+    font-size: 24px;
+    color: black;
+    color: black;
+}
+
+.github-icon:hover {
+    color: orangered;
+}
+
+
+.example-memes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.meme {
+    margin-bottom: 20px;
+}
+
+.meme img {
+    max-width: 100px;
+    height: auto;
+    transition: max-width 0.3s ease;
+}
+
+.meme img:hover {
+    max-width: 200px;
+}
+
+.caption {
+    font-size: small;
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 300px;
+
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
