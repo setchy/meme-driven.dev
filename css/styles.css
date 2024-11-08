@@ -5,8 +5,10 @@ body {
 
 .site-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 8fr 2fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     gap: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .site-header {
