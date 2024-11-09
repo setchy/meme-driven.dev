@@ -73,6 +73,11 @@ body {
 
 }
 
+.oops {
+    margin-top: 100px;
+    max-width: 400px;
+}
+
 ul {
     margin-bottom: 20px;
 }
