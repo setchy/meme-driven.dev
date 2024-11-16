@@ -7,8 +7,7 @@ export const siteMetadata = {
     owner: 'setchy',
     name: 'meme-driven.dev',
   },
-  keywords:
-    'meme,meme-driven,mdd,development,methodology,setchy',
+  keywords: 'meme,meme-driven,mdd,development,methodology,setchy',
   author: {
     name: 'Adam Setch (@setchy)',
     site: 'https://setchy.io',

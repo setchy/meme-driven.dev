@@ -1,14 +1,21 @@
 ---
-import { marked } from "marked";
+import { marked } from 'marked';
 
 export interface Props {
   title: string;
   description?: string;
   anchor?: string;
   isDark?: boolean;
+  withCol?: boolean;
 }
 
-const { title, description = "", anchor, isDark = false } = Astro.props;
+const {
+  title,
+  description = '',
+  anchor,
+  isDark = false,
+  withCol = false,
+} = Astro.props;
 ---
 
 <div
@@ -30,8 +37,9 @@ const { title, description = "", anchor, isDark = false } = Astro.props;
         class="text-lg lg:text-xl font-light"
         set:html={marked(description)}
       />
-
-      <slot />
+      {!withCol ? <slot /> : null}
     </div>
+
+    {withCol ? <slot /> : null}
   </div>
 </div>

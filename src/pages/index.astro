@@ -1,11 +1,14 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Image } from 'astro:assets';
 
-import { siteMetadata } from "~/constants";
-import { openSourceLibs } from "~/icons/icons";
-import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
-import SectionRow from "../layouts/SectionRow.astro";
+import { Icon } from 'astro-icon/components';
+
+import { siteMetadata } from '~/constants';
+import { openSourceLibs } from '~/icons/icons';
+import { bestPractices } from '~/memes/memes';
+import Hero from '../components/Hero.astro';
+import Layout from '../layouts/Layout.astro';
+import SectionRow from '../layouts/SectionRow.astro';
 ---
 
 <Layout title={siteMetadata.description}>
@@ -13,12 +16,25 @@ import SectionRow from "../layouts/SectionRow.astro";
     <Hero />
 
     <SectionRow title="Meme Driven Development Manifesto" anchor="manifesto">
-        <p>
-          We are uncovering better ways of developing software by creating and
-          sharing memes. Through this work, we have come to value:
-        </p>
+      <div class="flex flex-col gap-4">
+        <div>
+          Meme Driven Development (MDD) aims to foster a creative and engaging
+          environment for software development. 
+        </div>
 
-        <ul>
+        <div>By integrating humor and visual
+          communication, MDD enhances team collaboration and makes the
+          development process more enjoyable.
+        </div>
+
+        <div>
+          We are uncovering better ways of developing software by creating and
+          sharing memes.
+        </div>
+
+        <div>Through this work, we have come to value:</div>
+
+        <ul class="list-none mb-8 space-y-4 ml-5">
           <li>
             <strong>Memes over Documentation</strong><br />
             That is, while there is value in comprehensive documentation, we value
@@ -44,9 +60,9 @@ import SectionRow from "../layouts/SectionRow.astro";
           </li>
         </ul>
 
-        <h2>Principles behind the Meme Driven Development Manifesto</h2>
+        <div class="text-xl font-bold">Principles behind the Meme Driven Development Manifesto</div>
 
-        <ol>
+        <ol class="list-decimal list-inside space-y-2 ml-5">
           <li>
             Our highest priority is to satisfy the team through early and
             continuous delivery of memes.
@@ -94,6 +110,7 @@ import SectionRow from "../layouts/SectionRow.astro";
             accordingly.
           </li>
         </ol>
+      </div> 
     </SectionRow>
 
     <SectionRow
@@ -101,175 +118,155 @@ import SectionRow from "../layouts/SectionRow.astro";
       anchor="specification"
       isDark
     >
-        <h2>Introduction</h2>
-        <p>
-          Meme Driven Development (MDD) is a novel approach to software
-          development derived from Test Driven Development (TDD). In MDD,
-          developers are required to create and share memes before writing any
-          code. Additionally, feedback on pull requests and other forms of
-          communication must be delivered in meme form. This specification
-          outlines the conventions and practices for adopting MDD in a
-          development workflow.
-        </p>
+      <div class="flex flex-col gap-4">
+        <div>
+            Meme Driven Development (MDD) is a novel approach to software
+            development derived from popular legacy methadologies like Test Driven Development (TDD) and Behavior Driven Development (BDD).
+        </div>
 
-        <h2>Specification</h2>
+        <div>In MDD, developers are required to create and share memes before writing any code. 
+          Additionally, feedback on pull requests and other forms of communication must be delivered in meme form. 
+          This specification outlines the conventions and practices for adopting MDD in a development workflow.
+        </div>
 
-        <h3>1. Meme Creation</h3>
-        <ul>
-          <li>
-            <strong>Purpose</strong>: Memes should encapsulate the essence of
-            the task or problem at hand.
-          </li>
-          <li>
-            <strong>Format</strong>: Memes can be in the form of images, GIFs,
-            or short videos.
-          </li>
-          <li>
-            <strong>Content</strong>: Memes must be relevant, respectful, and
-            adhere to company policies on appropriate content.
-          </li>
-        </ul>
+        <div class="text-2xl font-bold">Specification</div>
+        <div class="flex flex-col gap-0.5 ml-5">
+          <div>
+            <div class="text-xl font-semibold italic">1. Meme Creation</div>
+            <ul class="list-disc list-inside mb-4 space-y-2 ml-5">
+              <li>
+                <strong>Purpose</strong>: Memes should encapsulate the essence of
+                the task or problem at hand.
+              </li>
+              <li>
+                <strong>Format</strong>: Memes can be in the form of images, GIFs,
+                or short videos.
+              </li>
+              <li>
+                <strong>Content</strong>: Memes must be relevant, respectful, and
+                adhere to company policies on appropriate content.
+              </li>
+            </ul>
+          </div>
 
-        <h3>2. Meme Before Code</h3>
-        <ul>
-          <li>
-            <strong>Requirement</strong>: Before any coding begins, a meme must
-            be created and shared with the team.
-          </li>
-          <li>
-            <strong>Approval</strong>: The meme must receive at least one
-            thumbs-up (👍) from a team member to proceed with coding.
-          </li>
-          <li>
-            <strong>Documentation</strong>: The meme should be documented in the
-            project management tool alongside the task description.
-          </li>
-        </ul>
+          <div>
+            <div class="text-xl font-semibold italic">2. Meme Before Code</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>
+                <strong>Requirement</strong>: Before any coding begins, a meme must
+                be created and shared with the team.
+              </li>
+              <li>
+                <strong>Approval</strong>: The meme must receive at least one
+                thumbs-up (👍) from a team member to proceed with coding.
+              </li>
+              <li>
+                <strong>Documentation</strong>: The meme should be documented in the
+                project management tool alongside the task description.
+              </li>
+            </ul>
+          </div>
 
-        <h3>3. Meme Feedback on Pull Requests</h3>
-        <ul>
-          <li>
-            <strong>Submission</strong>: All feedback on pull requests must be
-            provided in meme form.
-          </li>
-          <li>
-            <strong>Clarity</strong>: Memes should clearly convey the feedback,
-            whether it is approval, a request for changes, or highlighting an
-            issue.
-          </li>
-          <li>
-            <strong>Constructiveness</strong>: Memes must be constructive and
-            aim to improve the code quality and team morale.
-          </li>
-        </ul>
+          <div>
+            <div class="text-xl font-semibold italic">3. Meme Feedback on Pull Requests</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>
+                <strong>Submission</strong>: All feedback on pull requests must be
+                provided in meme form.
+              </li>
+              <li>
+                <strong>Clarity</strong>: Memes should clearly convey the feedback,
+                whether it is approval, a request for changes, or highlighting an
+                issue.
+              </li>
+              <li>
+                <strong>Constructiveness</strong>: Memes must be constructive and
+                aim to improve the code quality and team morale.
+              </li>
+            </ul>
+          </div>  
 
-        <h3>4. Meme Communication</h3>
-        <ul>
-          <li>
-            <strong>Daily Stand-ups</strong>: Memes can be used to summarize
-            daily updates or blockers.
-          </li>
-          <li>
-            <strong>Sprint Reviews</strong>: Memes should be used to highlight
-            key achievements and areas for improvement.
-          </li>
-          <li>
-            <strong>Retrospectives</strong>: Memes can be employed to reflect on
-            the sprint and suggest actionable improvements.
-          </li>
-        </ul>
+          <div>
+            <div class="text-xl font-semibold italic">4. Meme Communication</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>
+                <strong>Daily Stand-ups</strong>: Memes can be used to summarize
+                daily updates or blockers.
+              </li>
+              <li>
+                <strong>Sprint Reviews</strong>: Memes should be used to highlight
+                key achievements and areas for improvement.
+              </li>
+              <li>
+                <strong>Retrospectives</strong>: Memes can be employed to reflect on
+                the sprint and suggest actionable improvements.
+              </li>
+            </ul>
+          </div>
 
-        <h3>5. Tools and Platforms</h3>
-        <ul>
-          <li>
-            <strong>Meme Creation Tools</strong>: Recommended tools include Meme
-            Generator, Giphy, and Canva.
-          </li>
-          <li>
-            <strong>Communication Platforms</strong>: Memes should be shared via
-            Slack, Microsoft Teams, or the project management tool in use.
-          </li>
-        </ul>
+          <div>
+            <div class="text-xl font-semibold italic">5. Tools and Platforms</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>
+                <strong>Meme Creation Tools</strong>: Recommended tools include Meme
+                Generator, Giphy, and Canva.
+              </li>
+              <li>
+                <strong>Communication Platforms</strong>: Memes should be shared via
+                Slack, Microsoft Teams, or the project management tool in use.
+              </li>
+            </ul>
+          </div>  
 
-        <h3>6. Compliance and Monitoring</h3>
-        <ul>
-          <li>
-            <strong>Adherence</strong>: All team members must adhere to the MDD
-            practices.
-          </li>
-          <li>
-            <strong>Monitoring</strong>: Regular audits should be conducted to
-            ensure memes are being used appropriately and effectively.
-          </li>
-          <li>
-            <strong>Feedback</strong>: Continuous feedback on the MDD process
-            should be encouraged to refine and improve the practice.
-          </li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>
-          Meme Driven Development aims to foster a creative and engaging
-          environment for software development. By integrating humor and visual
-          communication, MDD enhances team collaboration and makes the
-          development process more enjoyable.
-        </p>
+          <div>
+            <div class="text-xl font-semibold italic">6. Compliance and Monitoring</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>
+                <strong>Adherence</strong>: All team members must adhere to the MDD
+                practices.
+              </li>
+              <li>
+                <strong>Monitoring</strong>: Regular audits should be conducted to
+                ensure memes are being used appropriately and effectively.
+              </li>
+              <li>
+                <strong>Feedback</strong>: Continuous feedback on the MDD process
+                should be encouraged to refine and improve the practice.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </SectionRow>
 
     <SectionRow title="Best Practices" anchor="best-practices">
-        <div class="meme-gallery">
-          <div class="meme">
-            <h3>Before Coding</h3>
-            <img
-              src="https://i.imgflip.com/1ur9b0.jpg"
-              alt="Distracted Boyfriend Meme"
-            />
-            <p class="caption">
-              Developer looking at "New Feature" while ignoring "Existing Bugs".
-            </p>
-          </div>
-
-          <div class="meme">
-            <h3>Pull Request Feedback</h3>
-            <img
-              src="https://i.imgflip.com/30b1gx.jpg"
-              alt="Drake Hotline Bling Meme"
-            />
-            <p class="caption">
-              Drake rejecting "Messy Code" and approving "Clean, Refactored
-              Code".
-            </p>
-          </div>
-
-          <div class="meme">
-            <h3>Daily Stand-up</h3>
-            <img src="https://i.imgflip.com/1bhw.jpg" alt="Success Kid Meme" />
-            <p class="caption">"Finally fixed that bug!"</p>
-          </div>
-
-          <div class="meme">
-            <h3>Sprint Review</h3>
-            <img
-              src="https://i.imgflip.com/2wifvo.jpg"
-              alt="Leonardo DiCaprio Cheers Meme"
-            />
-            <p class="caption">"To a successful deployment!"</p>
-          </div>
-
-          <div class="meme">
-            <h3>Retrospective</h3>
-            <img src="https://i.imgflip.com/1bij.jpg" alt="This is Fine Meme" />
-            <p class="caption">
-              "When the sprint starts smoothly but ends in chaos".
-            </p>
-          </div>
-        </div>
+      <div class="grid grid-cols-3 gap-4 p-4">
+        {
+          bestPractices.map((item) => (
+            <div class="overflow-hidden group">
+              <div class="text-l italic font-semibold">{item.title}</div>
+               <Image
+                  class="w-full lg:w-96 max-w-md rounded-lg shadow-lg mb-2"
+                  width="500"
+                  height="400"
+                  src={import(`../memes/${item.meme}.jpg`)}
+                  alt={item.title}
+              />
+              
+              <div class="text-xs italic mt-1">
+                {item.caption}
+              </div>
+            </div>
+          ))
+        }
+      </div>
     </SectionRow>
 
     <SectionRow
-      title="Free & Open Source."
-      description="<p>Meme-Driven Development is based on Astro, Tailwind CSS and more awesome open source libraries.</p><br /><p>Written in Typescript.</p>"
+      title="MDD is proudly an Open Standard"
+      description="<p>Meme-Driven Development is the peoples standard.  Built using Astro, Tailwind CSS, Typescript and more awesome open source libraries.</p><br /><p>Contributions welcomed.</p>"
       isDark
+      withCol
     >
       <div class="flex flex-wrap justify-center md:max-w-lg mt-12 lg:mt-0">
         {

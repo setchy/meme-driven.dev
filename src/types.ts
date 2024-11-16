@@ -10,5 +10,11 @@ export interface IconDetails {
   svg: string;
 }
 
+export interface BestPractice {
+  title: string;
+  meme: string;
+  caption: string;
+}
+
 // GitHub API types
 export type ReleaseAsset = components['schemas']['release-asset'];
