@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply font-semibold hover:text-red-600 hover:underline;
+}
+
+.markdown ul {
+  @apply list-disc m-4;
+}
+
+.markdown ul > li {
+  @apply m-2;
+}
+
+.markdown p + ul {
+  padding-top: 0; /* Remove padding if <p> is followed by <ul> */
+}
+
+.markdown p:not(:last-child):not(:has(+ ul)) {
+  padding-bottom: 1rem;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  gap: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.site-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.site-sidebar {
+  padding-top: 20px;
+  text-align: right;
+}
+
+.site-main {
+  margin: 0 auto;
+}
+
+.site-main img {
+  max-width: 300px;
+}
+
+.site-links {
+  padding-top: 30px;
+  text-align: left;
+}
+
+.meme-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.meme {
+  margin-bottom: 20px;
+}
+
+.meme img {
+  max-width: 100px;
+  height: auto;
+  transition: max-width 0.3s ease;
+}
+
+.meme img:hover {
+  max-width: 200px;
+}
+
+.caption {
+  font-size: small;
+  font-style: italic;
+  margin-top: 10px;
+  max-width: 300px;
+
+}
+
+.oops {
+  margin-top: 100px;
+  max-width: 400px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+section+section::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
