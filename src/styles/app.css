@@ -22,7 +22,6 @@ a {
   padding-bottom: 1rem;
 }
 
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -84,23 +83,9 @@ body {
   font-style: italic;
   margin-top: 10px;
   max-width: 300px;
-
 }
 
 .oops {
   margin-top: 100px;
   max-width: 400px;
-}
-
-ul {
-  margin-bottom: 20px;
-}
-
-section+section::before {
-  content: "";
-  display: block;
-  width: 100%;
-  border-top: 2px solid #ccc;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }

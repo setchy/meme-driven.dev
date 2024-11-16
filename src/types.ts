@@ -1,7 +1,6 @@
 import type { components } from '@octokit/openapi-types';
 
 export interface RepoStats {
-  forks: string;
   stars: string;
 }
 

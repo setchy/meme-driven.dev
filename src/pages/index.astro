@@ -6,7 +6,6 @@ import { openSourceLibs } from "~/icons/icons";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import SectionRow from "../layouts/SectionRow.astro";
-import Manifesto from "~/sections/Manifesto.astro";
 ---
 
 <Layout title={siteMetadata.description}>
@@ -14,7 +13,6 @@ import Manifesto from "~/sections/Manifesto.astro";
     <Hero />
 
     <SectionRow title="Meme Driven Development Manifesto" anchor="manifesto">
-      <section>
         <p>
           We are uncovering better ways of developing software by creating and
           sharing memes. Through this work, we have come to value:
@@ -96,7 +94,6 @@ import Manifesto from "~/sections/Manifesto.astro";
             accordingly.
           </li>
         </ol>
-      </section>
     </SectionRow>
 
     <SectionRow
@@ -104,7 +101,6 @@ import Manifesto from "~/sections/Manifesto.astro";
       anchor="specification"
       isDark
     >
-      <section>
         <h2>Introduction</h2>
         <p>
           Meme Driven Development (MDD) is a novel approach to software
@@ -218,11 +214,9 @@ import Manifesto from "~/sections/Manifesto.astro";
           communication, MDD enhances team collaboration and makes the
           development process more enjoyable.
         </p>
-      </section>
     </SectionRow>
 
     <SectionRow title="Best Practices" anchor="best-practices">
-      <section>
         <div class="meme-gallery">
           <div class="meme">
             <h3>Before Coding</h3>
@@ -270,7 +264,6 @@ import Manifesto from "~/sections/Manifesto.astro";
             </p>
           </div>
         </div>
-      </section>
     </SectionRow>
 
     <SectionRow

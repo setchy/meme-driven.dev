@@ -19,10 +19,6 @@ export const siteMetadata = {
   },
   menuLinks: [
     {
-      name: 'Home',
-      path: '/',
-    },
-    {
       name: 'Manifesto',
       path: '/#manifesto',
     },
