@@ -1,0 +1,11 @@
+# Build files
+dist/
+
+# Dependency directories
+node_modules/
+
+# Astro Docs - generated
+.astro/
+
+# Mac Files
+.DS_Store

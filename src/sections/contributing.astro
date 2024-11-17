@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import { openSourceLibs } from '~/icons/icons';
+import SectionRow from '~/layouts/SectionRow.astro';
+---
+
+<SectionRow
+  title="Help shape the future of development"
+  description="<p>Meme-Driven Development is an open standard. We need you're help shape it's future!<br /><br />Built using Astro, Tailwind CSS, Typescript and more awesome open source libraries.</p>"
+  isDark
+>
+  <div
+    class="flex flex-wrap justify-center items-center md:max-w-lg pt-10 mx-auto"
+  >
+    {
+      openSourceLibs.map((item) => (
+        <div class="hover:bg-gray-200 p-2 m-2 rounded-lg">
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <Icon
+              name={item.svg}
+              title={item.name}
+              size={32}
+              class="w-8 sm:w-12"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</SectionRow>

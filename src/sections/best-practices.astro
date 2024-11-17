@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+
+import SectionRow from '~/layouts/SectionRow.astro';
+import { bestPractices } from '~/memes/memes';
+---
+
+<SectionRow
+  title="Best Practices"
+  anchor="best-practices"
+  description="Explore these best practices to inspire your team and make MDD an integral part of your workflow!"
+>
+  <div class="grid grid-cols-3 gap-4 p-4">
+    {
+      bestPractices.map((item) => (
+        <div class="overflow-hidden group">
+          <div class="text-l italic font-semibold">{item.title}</div>
+          <Image
+            class="w-full h-64 object-cover rounded-lg shadow-lg mb-2"
+            width="500"
+            height="400"
+            src={import(`../memes/${item.meme}.jpg`)}
+            alt={item.title}
+          />
+          <div class="text-xs italic mt-1">{item.caption}</div>
+        </div>
+      ))
+    }
+  </div>
+</SectionRow>
