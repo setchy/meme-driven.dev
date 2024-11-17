@@ -24,6 +24,16 @@
       "quoteStyle": "single"
     }
   },
+  "overrides": [
+    {
+      "include": ["*.astro"],
+      "javascript": {
+        "formatter": {
+          "quoteStyle": "double"
+        }
+      }
+    }
+  ],
   "json": {
     "parser": {
       "allowComments": true
