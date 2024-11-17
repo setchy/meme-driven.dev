@@ -15,24 +15,28 @@ import SectionRow from '../layouts/SectionRow.astro';
   <main>
     <Hero />
 
-    <SectionRow title="Meme Driven Development Manifesto" anchor="manifesto">
+    <SectionRow title="Meme Driven Development (MDD)" anchor="overview">
       <div class="flex flex-col gap-4">
+        <div>
+            Meme Driven Development (MDD) is a novel approach to software development derived from 
+            popular legacy methadologies like Test Driven Development (TDD) and Behavior Driven Development (BDD).
+        </div>
+
         <div>
           Meme Driven Development (MDD) aims to foster a creative and engaging
           environment for software development. 
         </div>
 
-        <div>By integrating humor and visual
-          communication, MDD enhances team collaboration and makes the
-          development process more enjoyable.
+        <div>By integrating humor and visual communication, MDD enhances team collaboration 
+          and makes the development process more enjoyable.
         </div>
+      </div>
+    </SectionRow> 
 
-        <div>
-          We are uncovering better ways of developing software by creating and
-          sharing memes.
-        </div>
-
-        <div>Through this work, we have come to value:</div>
+    <SectionRow title="Meme Driven Development Manifesto" anchor="manifesto" isDark>
+      <div class="flex flex-col gap-4">
+        <div>We are uncovering better ways of developing software by creating and
+          sharing memes. Through this work, we have come to value:</div>
 
         <ul class="list-none mb-8 space-y-4 ml-5">
           <li>
@@ -59,8 +63,12 @@ import SectionRow from '../layouts/SectionRow.astro';
             the collective spirit and camaraderie that memes help build.
           </li>
         </ul>
+      </div>
+    </SectionRow>
 
-        <div class="text-xl font-bold">Principles behind the Meme Driven Development Manifesto</div>
+    <SectionRow title="Principles behind the Meme Driven Development Manifesto" anchor="principles">
+      <div class="flex flex-col gap-4">
+        <div>We follow these principles:</div>
 
         <ol class="list-decimal list-inside space-y-2 ml-5">
           <li>
@@ -116,23 +124,23 @@ import SectionRow from '../layouts/SectionRow.astro';
     <SectionRow
       title="Meme Driven Development Specification"
       anchor="specification"
-      isDark
+      isDark  
     >
       <div class="flex flex-col gap-4">
         <div>
-            Meme Driven Development (MDD) is a novel approach to software
-            development derived from popular legacy methadologies like Test Driven Development (TDD) and Behavior Driven Development (BDD).
+          In MDD, developers are required to create and share memes 
+          <em>before</em>, <em>during</em> and <em>after</em> writing any code. 
         </div>
 
-        <div>In MDD, developers are required to create and share memes before writing any code. 
+        <div>
           Additionally, feedback on pull requests and other forms of communication must be delivered in meme form. 
           This specification outlines the conventions and practices for adopting MDD in a development workflow.
         </div>
 
-        <div class="text-2xl font-bold">Specification</div>
-        <div class="flex flex-col gap-0.5 ml-5">
+        <div class="text-xl font-bold">Specification</div>
+        <div class="flex flex-col gap-1 ml-5">
           <div>
-            <div class="text-xl font-semibold italic">1. Meme Creation</div>
+            <div class="text-lg font-semibold italic underline mb-1">1. Meme Creation</div>
             <ul class="list-disc list-inside mb-4 space-y-2 ml-5">
               <li>
                 <strong>Purpose</strong>: Memes should encapsulate the essence of
@@ -150,7 +158,7 @@ import SectionRow from '../layouts/SectionRow.astro';
           </div>
 
           <div>
-            <div class="text-xl font-semibold italic">2. Meme Before Code</div>
+            <div class="text-lg font-semibold italic underline mb-1">2. Meme Before Code</div>
             <ul class="list-disc list-inside mb-4 space-y-2">
               <li>
                 <strong>Requirement</strong>: Before any coding begins, a meme must
@@ -168,7 +176,7 @@ import SectionRow from '../layouts/SectionRow.astro';
           </div>
 
           <div>
-            <div class="text-xl font-semibold italic">3. Meme Feedback on Pull Requests</div>
+            <div class="text-lg font-semibold italic underline mb-1">3. Meme Feedback on Pull Requests</div>
             <ul class="list-disc list-inside mb-4 space-y-2">
               <li>
                 <strong>Submission</strong>: All feedback on pull requests must be
@@ -187,7 +195,7 @@ import SectionRow from '../layouts/SectionRow.astro';
           </div>  
 
           <div>
-            <div class="text-xl font-semibold italic">4. Meme Communication</div>
+            <div class="text-lg font-semibold italic underline mb-1">4. Meme Communication</div>
             <ul class="list-disc list-inside mb-4 space-y-2">
               <li>
                 <strong>Daily Stand-ups</strong>: Memes can be used to summarize
@@ -205,7 +213,7 @@ import SectionRow from '../layouts/SectionRow.astro';
           </div>
 
           <div>
-            <div class="text-xl font-semibold italic">5. Tools and Platforms</div>
+            <div class="text-lg font-semibold italic underline mb-1">5. Tools and Platforms</div>
             <ul class="list-disc list-inside mb-4 space-y-2">
               <li>
                 <strong>Meme Creation Tools</strong>: Recommended tools include Meme
@@ -219,7 +227,7 @@ import SectionRow from '../layouts/SectionRow.astro';
           </div>  
 
           <div>
-            <div class="text-xl font-semibold italic">6. Compliance and Monitoring</div>
+            <div class="text-lg font-semibold italic underline mb-1">6. Compliance and Monitoring</div>
             <ul class="list-disc list-inside mb-4 space-y-2">
               <li>
                 <strong>Adherence</strong>: All team members must adhere to the MDD
@@ -239,7 +247,9 @@ import SectionRow from '../layouts/SectionRow.astro';
       </div>
     </SectionRow>
 
-    <SectionRow title="Best Practices" anchor="best-practices">
+    <SectionRow title="Best Practices" anchor="best-practices"
+      description='Explore these best practices to inspire your team and make MDD an integral part of your workflow!'
+    >
       <div class="grid grid-cols-3 gap-4 p-4">
         {
           bestPractices.map((item) => (
@@ -263,12 +273,11 @@ import SectionRow from '../layouts/SectionRow.astro';
     </SectionRow>
 
     <SectionRow
-      title="MDD is proudly an Open Standard"
-      description="<p>Meme-Driven Development is the peoples standard.  Built using Astro, Tailwind CSS, Typescript and more awesome open source libraries.</p><br /><p>Contributions welcomed.</p>"
+      title="Help shape the future of development"
+      description="<p>Meme-Driven Development is an open standard. We need you're help shape it's future!<br /><br />Built using Astro, Tailwind CSS, Typescript and more awesome open source libraries.</p>"
       isDark
-      withCol
     >
-      <div class="flex flex-wrap justify-center md:max-w-lg mt-12 lg:mt-0">
+      <div class="flex flex-wrap justify-center items-center md:max-w-lg pt-10 mx-auto">
         {
           openSourceLibs.map((item) => (
             <div class="hover:bg-gray-200 p-2 m-2 rounded-lg">

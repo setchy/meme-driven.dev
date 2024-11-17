@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
 
 import { siteMetadata } from '~/constants';
 import book from '../assets/book.jpg';
@@ -11,8 +10,6 @@ import book from '../assets/book.jpg';
     class="container flex flex-col md:flex-row lg:items-center max-w-5xl mx-auto px-12 py-8 lg:py-16"
   >
     <div class="flex flex-col justify-center flex-grow">
-      <Icon name="awesome" title="Awesome Logo" size={48} class="w-8 sm:w-12" />
-
       <h1 class="text-2xl lg:text-4xl font-semibold">{siteMetadata.title}</h1>
 
       <h2 class="mt-2 text-xl lg:text-2xl font-light">
@@ -22,7 +19,7 @@ import book from '../assets/book.jpg';
 
     <div class="rotate-6 flex justify-center items-center flex-col">
       <Image
-        class="block w-full max-w-sm mx-auto h-auto shadow-2xl rounded-xl transform"
+        class="block w-full max-w-sm mx-auto h-auto shadow-2xl rounded-xl transform mt-10"
         src={book}
         alt="Meme-Driven Development Book"
         width="200"

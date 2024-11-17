@@ -22,6 +22,10 @@ export const siteMetadata = {
       path: '/#manifesto',
     },
     {
+      name: 'Principles',
+      path: '/#principles',
+    },
+    {
       name: 'Specification',
       path: '/#specification',
     },

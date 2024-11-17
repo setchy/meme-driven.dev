@@ -9,23 +9,23 @@ export const bestPractices: BestPractice[] = [
   },
   {
     title: 'Pull Request Feedback',
-    meme: 'drake',
+    meme: 'drake-hotline-bling',
     caption:
       'Drake rejecting "Messy Code" and approving "Clean, Refactored Code"',
   },
   {
     title: 'Daily Stand-up',
-    meme: 'drake',
+    meme: 'hide-the-pain-harold',
     caption: '"Finally fixed that bug!"',
   },
   {
-    title: 'Sprint Review',
-    meme: 'drake',
-    caption: '"To a successful deployment!"',
+    title: 'Retrospective',
+    meme: 'sus-fry',
+    caption: '"Carrying over stories for the third sprint in a row"',
   },
   {
-    title: 'Retrospective',
-    meme: 'one-does-not',
-    caption: '"When the sprint starts smoothly but ends in chaos". ',
+    title: 'Sprint Review',
+    meme: 'one-does-not-simply',
+    caption: 'Discussing "what is a story point" for the tenth time this month',
   },
 ];

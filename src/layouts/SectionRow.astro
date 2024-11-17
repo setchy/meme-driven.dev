@@ -6,7 +6,6 @@ export interface Props {
   description?: string;
   anchor?: string;
   isDark?: boolean;
-  withCol?: boolean;
 }
 
 const {
@@ -14,13 +13,12 @@ const {
   description = '',
   anchor,
   isDark = false,
-  withCol = false,
 } = Astro.props;
 ---
 
 <div
   class:list={[
-    "flex px-12 py-16 lg:py-24",
+    "flex px-12 py-16",
     isDark ? "bg-gray-800 text-white" : "bg-gray-50",
   ]}
 >
@@ -37,9 +35,7 @@ const {
         class="text-lg lg:text-xl font-light"
         set:html={marked(description)}
       />
-      {!withCol ? <slot /> : null}
+      <slot />
     </div>
-
-    {withCol ? <slot /> : null}
   </div>
 </div>
