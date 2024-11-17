@@ -12,7 +12,6 @@ export interface Props {
 }
 
 const { title, hideFooter = false } = Astro.props;
-const pageTitle = `${title} - ${siteMetadata.title}`;
 const ogImage = `${siteMetadata.url}/images/social.png`;
 ---
 
@@ -22,7 +21,7 @@ const ogImage = `${siteMetadata.url}/images/social.png`;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={siteMetadata.description} />
-    <title>{pageTitle}</title>
+    <title>{title}</title>
     <GoogleAnalytics />
 
     <link rel="icon" href="/images/favicon.ico" />
