@@ -17,7 +17,9 @@ import GitHubRepo from "./GitHubRepo.astro";
       </div>
 
       <div class="flex justify-end">
-        <ul class="flex flex-row flex-wrap text-sm max-lg:text-xs items-center list-none space-x-4 max-md:space-x-1">
+        <ul
+          class="flex flex-row flex-wrap text-sm max-lg:text-xs items-center list-none space-x-4 max-md:space-x-1"
+        >
           {
             siteMetadata.menuLinks.map((item) => (
               <li class="py-2.5">
@@ -26,7 +28,8 @@ import GitHubRepo from "./GitHubRepo.astro";
                   class:list={[
                     "py-1.5 lg:py-2 px-2 lg:px-3",
                     "font-light text-white hover:text-red-300",
-                    "border rounded-lg border-white"
+                    "border rounded-lg border-white",
+                    "max-sm:hidden",
                   ]}
                 >
                   {item.name}
