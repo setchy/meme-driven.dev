@@ -1,4 +1,4 @@
-name: Netfliy
+name: Netlify
 
 on:
   workflow_dispatch: # For manually verify
