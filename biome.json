@@ -6,11 +6,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
-      "correctness": {
-        "useJsxKeyInIterable": "off",
-        "noChildrenProp": "off"
-      }
+      "recommended": true
     }
   },
   "vcs": {
