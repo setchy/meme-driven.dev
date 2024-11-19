@@ -19,7 +19,7 @@ import { bestPractices } from "~/memes/memes";
             class="w-full h-64 object-cover rounded-lg shadow-lg mb-2"
             width="500"
             height="400"
-            src={import(`../memes/${item.meme}`)}
+            src={import(`../memes/${item.meme}.${item.ext}`)}
             alt={item.title}
           />
           <div class="text-xs italic mt-1">{item.caption}</div>

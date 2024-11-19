@@ -13,6 +13,7 @@ export interface IconDetails {
 export interface BestPractice {
   title: string;
   meme: string;
+  ext: 'jpg' | 'png' | 'svg';
   caption: string;
 }
 
