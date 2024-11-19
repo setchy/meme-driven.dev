@@ -9,7 +9,7 @@ export const siteMetadata = {
   },
   keywords: 'meme,meme-driven,mdd,development,methodology,setchy',
   author: {
-    name: 'Adam Setch (@setchy)',
+    name: '@setchy',
     site: 'https://setchy.io',
   },
   google: {
