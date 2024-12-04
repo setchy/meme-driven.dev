@@ -11,13 +11,13 @@ export interface Props {
 const { title, description = "", anchor, isDark = false } = Astro.props;
 ---
 
-<div
+<section
+  id={anchor}
   class:list={[
     "flex px-12 py-16",
     isDark ? "bg-gray-800 text-white" : "bg-gray-50",
   ]}
 >
-  <a id={anchor}></a>
   <div
     class:list={[
       "container max-w-5xl mx-auto flex flex-col items-center",
@@ -33,4 +33,4 @@ const { title, description = "", anchor, isDark = false } = Astro.props;
       <slot />
     </div>
   </div>
-</div>
+</section>
