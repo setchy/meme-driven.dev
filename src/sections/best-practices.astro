@@ -16,7 +16,7 @@ import { bestPractices } from "~/memes/memes";
         <div class="overflow-hidden group">
           <div class="text-l italic font-semibold">{item.title}</div>
           <Image
-            class="w-full h-64 object-cover rounded-lg shadow-lg mb-2"
+            class="w-full h-auto object-contain rounded-lg shadow-lg mb-2"
             width="500"
             height="400"
             src={import(`../memes/${item.meme}.${item.ext}`)}
