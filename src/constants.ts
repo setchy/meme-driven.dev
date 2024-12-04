@@ -13,7 +13,6 @@ export const siteMetadata = {
     site: 'https://setchy.io',
   },
   google: {
-    analytics: 'G-736BKHY5WS',
     siteVerification: '',
   },
   menuLinks: [
