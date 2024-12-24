@@ -2,29 +2,22 @@
 import { Icon } from "astro-icon/components";
 
 import { URLs, siteMetadata } from "~/constants";
-
-const { currentPathname } = Astro.props;
-const isHomepage = currentPathname === "/";
 ---
 
-<div
-  class={`bg-gray-800 text-white text-sm py-10 px-3 ${
-    isHomepage ? "mt-0" : "mt-12"
-  }`}
->
+<div class="bg-gray-800 text-white text-sm py-10 px-3 -mt-20">
   <div class="container mx-auto flex flex-col items-center text-center">
     <a
       target="_blank"
       rel="noopener noreferrer"
       href=`${URLs.GITHUB.REPO}`
       aria-label="GitHub Repository"
-      class="mt-1 mb-4 mx-2 p-1 text-white hover:text-gray-400"
+      class="mt-1 mb-4 mx-2 p-1 text-white hover:text-gray-400 hover:motion-preset-pulse hover:motion-duration-1000"
     >
       <Icon name="mdi:github" size={32} />
     </a>
 
     <div class="my-3">
-      Copyright © <a href={siteMetadata.author.site}
+      © Copyright <a href={siteMetadata.author.site}
         >{siteMetadata.author.name}</a
       >
       {new Date().getFullYear()}.
