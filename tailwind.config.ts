@@ -1,5 +1,5 @@
-import TailwindCSSTypography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
+import TailwindCSSMotion from 'tailwindcss-motion';
 
 const config: Config = {
   darkMode: ['class', '[data-kb-theme="dark"]'],
@@ -11,7 +11,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [TailwindCSSTypography],
+  plugins: [TailwindCSSMotion],
 };
 
 export default config;
