@@ -4,15 +4,13 @@ import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Navbar from "~/components/Navbar.astro";
 
 import "~/styles/app.css";
-
 import { siteMetadata } from "~/constants";
 
 export interface Props {
   title: string;
-  hideFooter?: boolean;
 }
 
-const { title, hideFooter = false } = Astro.props;
+const { title } = Astro.props;
 const ogImage = `${siteMetadata.url}/images/social.png`;
 ---
 
@@ -23,8 +21,8 @@ const ogImage = `${siteMetadata.url}/images/social.png`;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={siteMetadata.description} />
     <title>{title}</title>
-    <GoogleAnalytics />
 
+    <!-- Favicons -->
     <link rel="icon" href="/images/favicon.ico" />
     <link
       rel="icon"
@@ -44,13 +42,15 @@ const ogImage = `${siteMetadata.url}/images/social.png`;
       href="/images/apple-touch-icon.png"
     />
 
-    {/* Open Graph Meta Tags for Social Media */}
+    <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={siteMetadata.description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={siteMetadata.url} />
     <meta property="og:image" content={ogImage} />
 
+    <!-- Google Analytics and Site Verification -->
+    <GoogleAnalytics />
     <meta
       name="google-site-verification"
       content={siteMetadata.google.siteVerification}
@@ -59,6 +59,8 @@ const ogImage = `${siteMetadata.url}/images/social.png`;
   <body class="flex flex-col min-h-screen">
     <Navbar currentPathname={Astro.url.pathname} />
     <slot />
-    {!hideFooter && <Footer currentPathname={Astro.url.pathname} />}
+    <Footer currentPathname={Astro.url.pathname} />
   </body>
 </html>
+-->
+
