@@ -43,7 +43,7 @@
     "@iconify-json/mdi": "1.2.2",
     "@octokit/openapi-types": "22.2.0",
     "astro": "5.1.1",
-    "astro-icon": "1.1.4",
+    "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
     "marked": "15.0.4",
     "octokit": "4.0.2",
