@@ -46,7 +46,7 @@
     "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
     "marked": "15.0.6",
-    "octokit": "4.0.3",
+    "octokit": "4.1.0",
     "sharp": "0.33.5",
     "tailwind-merge": "2.6.0",
     "tailwindcss-motion": "1.0.1",
