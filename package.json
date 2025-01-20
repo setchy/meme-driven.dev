@@ -39,10 +39,10 @@
   },
   "homepage": "https://meme-driven.dev/",
   "dependencies": {
-    "@astrojs/tailwind": "5.1.4",
+    "@astrojs/tailwind": "5.1.5",
     "@iconify-json/mdi": "1.2.3",
     "@octokit/openapi-types": "23.0.1",
-    "astro": "5.1.7",
+    "astro": "5.1.8",
     "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
     "marked": "15.0.6",
