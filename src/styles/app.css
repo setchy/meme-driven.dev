@@ -2,7 +2,15 @@
 @config "../../tailwind.config.ts";
 
 a {
-  @apply font-semibold hover:underline;
+  @apply text-white;
+}
+
+a:not(.nav-link) {
+  @apply font-semibold;
+}
+
+a:not(.repository-link) {
+  @apply hover:underline
 }
 
 @layer components {
