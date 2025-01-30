@@ -13,8 +13,6 @@ a:not(.repository-link) {
   @apply hover:underline
 }
 
-@layer components {
-  .quote {
-    @apply font-semibold italic;
-  }
+.quote {
+  @apply font-semibold italic;
 }
