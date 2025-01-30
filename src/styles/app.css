@@ -10,7 +10,7 @@ a:not(.nav-link) {
 }
 
 a:not(.repository-link) {
-  @apply hover:underline
+  @apply hover:underline;
 }
 
 .quote {
