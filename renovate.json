@@ -5,7 +5,8 @@
     ":separateMultipleMajorReleases",
     ":enableVulnerabilityAlerts",
     "schedule:daily",
-    "customManagers:biomeVersions"
+    "customManagers:biomeVersions",
+    "helpers:pinGitHubActionDigests"
   ],
   "labels": ["dependency"],
   "rangeStrategy": "pin",
