@@ -1,5 +1,8 @@
 name: Netlify
 
+permissions:
+  contents: read
+  
 on:
   workflow_dispatch: # For manually verify
 
