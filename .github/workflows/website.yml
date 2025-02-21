@@ -1,10 +1,10 @@
 name: Netlify
 
-permissions:
-  contents: read
-  
 on:
   workflow_dispatch: # For manually verify
+
+permissions:
+  contents: read
 
 jobs:
   redeploy-website:

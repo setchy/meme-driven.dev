@@ -1,13 +1,13 @@
 name: Linting
 
-permissions:
-  contents: read
-
 on:
   push:
     branches:
       - main
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   lint:
@@ -26,6 +26,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-          
+
       - run: pnpm install
       - run: pnpm lint:check
