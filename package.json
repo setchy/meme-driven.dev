@@ -41,7 +41,7 @@
   "dependencies": {
     "@iconify-json/mdi": "1.2.3",
     "@octokit/openapi-types": "24.0.0",
-    "@tailwindcss/vite": "4.0.12",
+    "@tailwindcss/vite": "4.0.14",
     "astro": "5.5.2",
     "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
@@ -49,7 +49,7 @@
     "octokit": "4.1.2",
     "sharp": "0.33.5",
     "tailwind-merge": "3.0.2",
-    "tailwindcss": "4.0.12",
+    "tailwindcss": "4.0.14",
     "tailwindcss-motion": "1.1.0"
   },
   "devDependencies": {
