@@ -18,8 +18,7 @@
     {
       "description": "Wait 7 days before suggesting new updates",
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "7 days",
-      "internalChecksFilter": "strict"
+      "minimumReleaseAge": "7 days"
     },
     {
       "description": "Remove word `dependency` from commit messages and PR titles",
