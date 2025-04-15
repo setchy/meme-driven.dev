@@ -4,7 +4,7 @@
     "config:recommended",
     ":separateMultipleMajorReleases",
     ":enableVulnerabilityAlerts",
-    "schedule:daily",
+    "schedule:weekly",
     "customManagers:biomeVersions",
     "helpers:pinGitHubActionDigests"
   ],
@@ -14,11 +14,6 @@
     {
       "matchDepTypes": ["engines"],
       "rangeStrategy": "auto"
-    },
-    {
-      "description": "Wait 7 days before suggesting new updates",
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "7 days"
     },
     {
       "description": "Remove word `dependency` from commit messages and PR titles",
