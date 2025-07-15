@@ -2,6 +2,13 @@ import type { BestPractice } from '~/types';
 
 export const bestPractices: BestPractice[] = [
   {
+    title: 'AI First',
+    meme: 'ai-first',
+    ext: 'jpg',
+    caption:
+      'Shake (vibe) and bake (AI)',
+  },
+  {
     title: 'Before Coding',
     meme: 'distracted-boyfriend',
     ext: 'jpg',
