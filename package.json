@@ -41,22 +41,22 @@
   "dependencies": {
     "@iconify-json/mdi": "1.2.3",
     "@octokit/openapi-types": "25.1.0",
-    "@tailwindcss/vite": "4.1.10",
-    "astro": "5.10.0",
+    "@tailwindcss/vite": "4.1.11",
+    "astro": "5.11.1",
     "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
-    "marked": "15.0.12",
+    "marked": "16.0.0",
     "octokit": "5.0.3",
-    "sharp": "0.34.2",
+    "sharp": "0.34.3",
     "tailwind-merge": "3.3.1",
-    "tailwindcss": "4.1.10",
+    "tailwindcss": "4.1.11",
     "tailwindcss-motion": "1.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.0",
+    "@biomejs/biome": "2.1.1",
     "husky": "9.1.7"
   },
-  "packageManager": "pnpm@10.12.2",
+  "packageManager": "pnpm@10.13.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
