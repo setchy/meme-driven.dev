@@ -5,8 +5,7 @@ export const bestPractices: BestPractice[] = [
     title: 'AI First',
     meme: 'ai-first',
     ext: 'jpg',
-    caption:
-      'Shake (vibe) and bake (AI)',
+    caption: 'Shake (vibe) and bake (AI)',
   },
   {
     title: 'Before Coding',
