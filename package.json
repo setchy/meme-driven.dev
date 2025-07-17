@@ -42,7 +42,7 @@
     "@iconify-json/mdi": "1.2.3",
     "@octokit/openapi-types": "25.1.0",
     "@tailwindcss/vite": "4.1.11",
-    "astro": "5.11.1",
+    "astro": "5.11.2",
     "astro-icon": "1.1.5",
     "date-fns": "4.1.0",
     "marked": "16.0.0",
