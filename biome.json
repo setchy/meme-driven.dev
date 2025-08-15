@@ -59,14 +59,16 @@
       },
       "linter": {
         "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          },
           "style": {
             "useConst": "off",
-
             "useImportType": "off"
           },
-          "correctness": {
-            "noUnusedVariables": "off",
-            "noUnusedImports": "off"
+          "suspicious": {
+            "noUnknownAtRules": "warn"
           }
         }
       }
