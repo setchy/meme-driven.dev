@@ -31,6 +31,9 @@
         "useNumberNamespace": "error",
         "noInferrableTypes": "error",
         "noUselessElse": "error"
+      },
+      "suspicious": {
+        "noUnknownAtRules": "warn"
       }
     }
   },
@@ -66,9 +69,6 @@
           "style": {
             "useConst": "off",
             "useImportType": "off"
-          },
-          "suspicious": {
-            "noUnknownAtRules": "warn"
           }
         }
       }
