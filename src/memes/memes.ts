@@ -25,8 +25,7 @@ export const bestPractices: BestPractice[] = [
     title: 'Testing',
     meme: 'test-in-prod',
     ext: 'jpg',
-    caption:
-      'I don\'t always test my code, but when I do, it\'s in production',
+    caption: "I don't always test my code, but when I do, it's in production",
   },
   {
     title: 'Daily Stand-up',
