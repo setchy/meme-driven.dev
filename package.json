@@ -66,6 +66,6 @@
     ]
   },
   "lint-staged": {
-    "*.{js,ts,cjs,mjs,astro}": "biome format --fix"
+    "*.{js,ts,cjs,mjs,astro}": "biome check --fix"
   }
 }
