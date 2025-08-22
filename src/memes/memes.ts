@@ -22,6 +22,12 @@ export const bestPractices: BestPractice[] = [
       'Drake rejecting "Messy Code" and approving "Clean, Refactored Code"',
   },
   {
+    title: 'Testing',
+    meme: 'test-in-prod',
+    ext: 'jpg',
+    caption: "I don't always test my code, but when I do, it's in production",
+  },
+  {
     title: 'Daily Stand-up',
     meme: 'hide-the-pain-harold',
     ext: 'jpg',
