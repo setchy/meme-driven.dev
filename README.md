@@ -4,11 +4,9 @@
 
 A novel (and fun) approach to modern software development.
 
-> Made with Astro.
-
 ## Contributing
 
-We welcome all contributions to shaping the future of meme-driven development. Simply open a PR.
+Any and all contributions to shaping the future of meme-driven development are greatly welcomed. Simply open a PR!
 
 ### Best Practices
 
