@@ -1,5 +1,5 @@
 ---
-import { marked } from "marked";
+import { marked } from 'marked';
 
 export interface Props {
   title: string;
@@ -8,9 +8,8 @@ export interface Props {
   isDark?: boolean;
 }
 
-const { title, description = "", anchor, isDark = false } = Astro.props;
+const { title, description = '', anchor, isDark = false } = Astro.props;
 ---
-
 <section
   id={anchor}
   class:list={[
@@ -26,8 +25,8 @@ const { title, description = "", anchor, isDark = false } = Astro.props;
   >
     <div class="flex-1">
       <h3 class="mb-4 text-xl lg:text-2xl font-semibold">{title}</h3>
-      <div class="font-light" set:html={marked(description)} />
-      <slot />
+      <div class="font-light" set:html={marked(description)}/>
+      <slot/>
     </div>
   </div>
 </section>
