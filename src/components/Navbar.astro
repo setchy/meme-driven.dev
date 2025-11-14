@@ -1,7 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
-import GitHubRepo from "~/components/GitHubRepo.astro";
-import { siteMetadata } from "~/constants";
+import { Icon } from 'astro-icon/components';
+import { siteMetadata } from '~/constants';
+import GitHubRepo from '~/components/GitHubRepo.astro';
 ---
 
 <nav class="py-8 px-8 bg-gray-100">
@@ -11,7 +11,7 @@ import { siteMetadata } from "~/constants";
     >
       <div class="flex items-center shrink-0 text-white mr-6">
         <a href="/" aria-label={siteMetadata.title}>
-          <Icon name="awesome" size={48} class="w-8 lg:w-12" />
+          <Icon name="awesome" size={48} class="w-8 lg:w-12"/>
         </a>
       </div>
 
@@ -38,7 +38,7 @@ import { siteMetadata } from "~/constants";
           }
 
           <li>
-            <GitHubRepo />
+            <GitHubRepo/>
           </li>
         </ul>
       </div>

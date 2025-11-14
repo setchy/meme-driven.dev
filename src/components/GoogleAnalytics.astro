@@ -1,12 +1,19 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-736BKHY5WS"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+---
+import { siteMetadata } from '../constants.ts';
 
-  gtag("config", "G-736BKHY5WS");
+const GTAG_ID = siteMetadata.google.gtag;
+const GTAG_SRC = `https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`;
+---
+
+<!-- Google tag (gtag.js) -->
+<script async src={GTAG_SRC}></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  // biome-ignore lint/complexity/noArguments: keep arguments object as per gtag.js spec
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', GTAG_ID);
 </script>

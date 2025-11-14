@@ -1,29 +1,29 @@
 ---
-import Hero from "~/components/Hero.astro";
-import { siteMetadata } from "~/constants";
-import Layout from "~/layouts/Layout.astro";
-import BestPractices from "~/sections/BestPractices.astro";
-import Contributing from "~/sections/Contributing.astro";
-import Manifesto from "~/sections/Manifesto.astro";
-import Overview from "~/sections/Overview.astro";
-import Principles from "~/sections/Principles.astro";
-import Specification from "~/sections/Specification.astro";
+import { siteMetadata } from '~/constants';
+import Hero from '~/components/Hero.astro';
+import Layout from '~/layouts/Layout.astro';
+import BestPractices from '~/sections/BestPractices.astro';
+import Contributing from '~/sections/Contributing.astro';
+import Manifesto from '~/sections/Manifesto.astro';
+import Overview from '~/sections/Overview.astro';
+import Principles from '~/sections/Principles.astro';
+import Specification from '~/sections/Specification.astro';
 ---
 
 <Layout title={siteMetadata.title}>
   <main>
-    <Hero />
+    <Hero/>
 
-    <Overview />
+    <Overview/>
 
-    <Manifesto />
+    <Manifesto/>
 
-    <Principles />
+    <Principles/>
 
-    <Specification />
+    <Specification/>
 
-    <BestPractices />
+    <BestPractices/>
 
-    <Contributing />
+    <Contributing/>
   </main>
 </Layout>
