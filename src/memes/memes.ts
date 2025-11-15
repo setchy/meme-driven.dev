@@ -15,6 +15,12 @@ export const bestPractices: BestPractice[] = [
       'Developer looking at "New Feature" while ignoring "Existing Bugs"',
   },
   {
+    title: 'Solving any Problem',
+    meme: 'einstein-thinking',
+    ext: 'jpg',
+    caption: 'Modern developer solving any problem nowadays. Just add AI.',
+  },
+  {
     title: 'Pull Request Feedback',
     meme: 'drake-hotline-bling',
     ext: 'jpg',
