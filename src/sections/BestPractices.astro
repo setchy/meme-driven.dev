@@ -10,8 +10,7 @@ import { bestPractices } from '~/memes/memes';
   description="Explore these best practices to inspire your team and make MDD an integral part of your workflow!"
 >
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-    {
-      bestPractices.map((item) => (
+    {bestPractices.map((item) => (
         <div class="overflow-hidden group">
           <div class="italic font-semibold">{item.title}</div>
           <div class="overflow-hidden group">
@@ -26,7 +25,6 @@ import { bestPractices } from '~/memes/memes';
           </div>
           <div class="text-xs italic mt-1">{item.caption}</div>
         </div>
-      ))
-    }
+      ))}
   </div>
 </SectionRow>

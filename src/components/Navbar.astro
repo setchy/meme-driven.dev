@@ -11,7 +11,7 @@ import GitHubRepo from '~/components/GitHubRepo.astro';
     >
       <div class="flex items-center shrink-0 text-white mr-6">
         <a href="/" aria-label={siteMetadata.title}>
-          <Icon name="awesome" size={48} class="w-8 lg:w-12"/>
+          <Icon name="awesome" size={48} class="w-8 lg:w-12" />
         </a>
       </div>
 
@@ -19,8 +19,7 @@ import GitHubRepo from '~/components/GitHubRepo.astro';
         <ul
           class="flex flex-row flex-wrap text-sm max-lg:text-xs items-center list-none space-x-4 max-md:space-x-1"
         >
-          {
-            siteMetadata.menuLinks.map((item) => (
+          {siteMetadata.menuLinks.map((item) => (
               <li class="py-2.5">
                 <a
                   href={item.path}
@@ -34,11 +33,10 @@ import GitHubRepo from '~/components/GitHubRepo.astro';
                   {item.name}
                 </a>
               </li>
-            ))
-          }
+            ))}
 
           <li>
-            <GitHubRepo/>
+            <GitHubRepo />
           </li>
         </ul>
       </div>
