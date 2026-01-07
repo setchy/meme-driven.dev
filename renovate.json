@@ -13,11 +13,6 @@
     {
       "matchDepTypes": ["engines"],
       "rangeStrategy": "auto"
-    },
-    {
-      "description": "Remove word `dependency` from commit messages and PR titles",
-      "matchDatasources": ["npm"],
-      "commitMessageTopic": "{{depName}}"
     }
   ]
 }
