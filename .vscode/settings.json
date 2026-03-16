@@ -9,7 +9,7 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-   "[json]": {
+  "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
