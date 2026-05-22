@@ -44,7 +44,7 @@
     "@tailwindcss/vite": "4.3.0",
     "astro": "6.3.5",
     "astro-icon": "1.1.5",
-    "date-fns": "4.1.0",
+    "date-fns": "4.2.1",
     "marked": "18.0.4",
     "octokit": "5.0.5",
     "sharp": "0.34.5",
