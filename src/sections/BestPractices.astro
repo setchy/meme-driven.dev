@@ -12,20 +12,20 @@ import { bestPractices } from '~/memes/memes';
 >
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
     {bestPractices.map((item) => (
+      <div class="overflow-hidden group">
+        <div class="italic font-semibold">{item.title}</div>
         <div class="overflow-hidden group">
-          <div class="italic font-semibold">{item.title}</div>
-          <div class="overflow-hidden group">
-            <Image
-              class="w-full h-auto object-contain rounded-lg shadow-lg mb-2 motion-preset-pop"
-              style="max-height: 400px;"
-              width="500"
-              height="400"
-              src={import(`../memes/${item.meme}.${item.ext}`)}
-              alt={item.title}
-            />
-          </div>
-          <div class="text-xs italic mt-1">{item.caption}</div>
+          <Image
+            class="w-full h-auto object-contain rounded-lg shadow-lg mb-2 motion-preset-pop"
+            style="max-height: 400px;"
+            width="500"
+            height="400"
+            src={import(`../memes/${item.meme}.${item.ext}`)}
+            alt={item.title}
+          />
         </div>
-      ))}
+        <div class="text-xs italic mt-1">{item.caption}</div>
+      </div>
+    ))}
   </div>
 </SectionRow>
