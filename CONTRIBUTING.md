@@ -34,6 +34,9 @@ There are two main checks:
 # Run biome to check linting and formatting
 pnpm lint:check
 
+# Auto-fix linting and formatting
+pnpm lint
+
 # Build for production
 pnpm build
 ```
