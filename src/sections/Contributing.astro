@@ -14,16 +14,16 @@ import SectionRow from '~/layouts/SectionRow.astro';
     class="flex flex-wrap justify-center items-center md:max-w-lg pt-10 mx-auto"
   >
     {openSourceLibs.map((item) => (
-        <div class="p-2 m-2 rounded-lg hover:motion-preset-pulse hover:motion-duration-1000">
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <Icon
-              name={item.svg}
-              title={item.name}
-              size={32}
-              class="w-8 sm:w-12"
-            />
-          </a>
-        </div>
-      ))}
+      <div class="p-2 m-2 rounded-lg hover:motion-preset-pulse hover:motion-duration-1000">
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <Icon
+            name={item.svg}
+            title={item.name}
+            size={32}
+            class="w-8 sm:w-12"
+          />
+        </a>
+      </div>
+    ))}
   </div>
 </SectionRow>
