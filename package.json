@@ -57,7 +57,7 @@
     "@astrojs/check": "0.9.10",
     "@biomejs/biome": "2.5.15",
     "husky": "9.1.7",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "packageManager": "pnpm@12.8.2",
   "lint-staged": {
