@@ -1,0 +1,14 @@
+.vscode/settings.json
+  h_ac004aadb63da9 17-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "48c1829e89fffd1c699142539c27f2b4ea9b5266",
+  "prompts": {},
+  "humans": {
+    "h_ac004aadb63da9": {
+      "author": "Adam Setch <adam.setch@outlook.com>"
+    }
+  }
+}
