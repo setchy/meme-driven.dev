@@ -26,9 +26,10 @@ Open [http://localhost:4321](http://localhost:4321) to view the site locally.
 
 ### 🧪 Checks
 
-There are two main checks:
+There are three main checks:
 1. Linter & formatter with [Biome][biome-website]
-2. Production build with [Astro][astro-website]
+2. Type checking and diagnostics with [Astro][astro-website]
+3. Production build with [Astro][astro-website]
 
 ```shell
 # Run biome to check linting and formatting
@@ -36,6 +37,9 @@ pnpm lint:check
 
 # Auto-fix linting and formatting
 pnpm lint
+
+# Check Astro and TypeScript for errors
+pnpm check
 
 # Build for production
 pnpm build
