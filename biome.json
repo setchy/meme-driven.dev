@@ -28,6 +28,7 @@
       "astro": "recommended",
       "project": "recommended",
       "tailwind": "recommended",
+      "test": "recommended",
       "types": "recommended"
     },
     "rules": {
@@ -40,6 +41,7 @@
         "noAstroSetHtmlDirective": "error",
         "noFloatingPromises": "error",
         "noMisusedPromises": "error",
+        "noTailwindArbitraryValue": "error",
         "noTailwindRawColors": "error",
         "noUnsafePlusOperands": "error",
         "useTailwindShorthandClasses": "error"
