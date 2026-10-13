@@ -1,21 +1,18 @@
 ---
-import { marked } from 'marked';
-
 export interface Props {
   title: string;
-  description?: string;
   anchor?: string;
   isDark?: boolean;
 }
 
-const { title, description = '', anchor, isDark = false } = Astro.props;
+const { title, anchor, isDark = false } = Astro.props;
 ---
 
 <section
   id={anchor}
   class:list={[
     'flex px-12 py-16',
-    isDark ? 'bg-gray-800 text-white' : 'bg-gray-50',
+    isDark ? 'bg-panel text-white' : 'bg-canvas',
   ]}
 >
   <div
@@ -26,7 +23,9 @@ const { title, description = '', anchor, isDark = false } = Astro.props;
   >
     <div class="flex-1">
       <h3 class="mb-4 text-xl lg:text-2xl font-semibold">{title}</h3>
-      <div class="font-light" set:html={marked(description)} />
+      <div class="font-light">
+        <slot name="description" />
+      </div>
       <slot />
     </div>
   </div>
