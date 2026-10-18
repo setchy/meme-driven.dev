@@ -24,4 +24,5 @@ jobs:
           node-version-file: '.nvmrc'
           cache: true
           require-lockfile: true
+
       - run: pnpm lint:check
