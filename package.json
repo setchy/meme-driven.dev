@@ -19,6 +19,11 @@
       "name": "node",
       "version": "24.22.1",
       "onFail": "warn"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.15.0",
+      "onFail": "download"
     }
   },
   "engines": {
@@ -65,7 +70,6 @@
     "husky": "9.1.7",
     "typescript": "6.0.3"
   },
-  "packageManager": "pnpm@12.15.0",
   "lint-staged": {
     "*.{js,ts,cjs,mjs,astro}": "biome check --fix"
   }
