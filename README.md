@@ -68,11 +68,9 @@ See [LICENSE](LICENSE) for details.
 <!-- LINK LABELS -->
 [social]: public/images/social.png
 [website]: https://meme-driven.dev
-
 [github]: https://github.com/setchy/meme-driven.dev
 [github-actions]: https://github.com/setchy/meme-driven.dev/actions
 [github-issues]: https://github.com/setchy/meme-driven.dev/issues
-
 [ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/meme-driven.dev/lint.yml?logo=github&label=CI
 [contributors-badge]: https://img.shields.io/github/contributors/setchy/meme-driven.dev?logo=github
 [license]: LICENSE
@@ -86,7 +84,6 @@ See [LICENSE](LICENSE) for details.
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
 [wakatime-badge]: https://wakatime.com/badge/user/2b948ae2-4be1-4020-8a57-7de60b53fe1d/project/3683a22e-647f-49a8-bc5d-9a0293258f5d.svg
 [wakatime]: https://wakatime.com
-
 [astro]: https://astro.build
 [tailwindcss]: https://tailwindcss.com
 [typescript]: https://typescriptlang.org
