@@ -66,11 +66,11 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.3",
     "husky": "9.1.7",
     "typescript": "6.0.3"
   },
   "lint-staged": {
-    "*.{js,ts,cjs,mjs,astro}": "biome check --fix"
+    "*.{js,ts,cjs,mjs,astro,md,yml,yaml}": "biome check --fix"
   }
 }

@@ -13,14 +13,14 @@ This project is a website presenting Meme Driven Development (MDD) — a novel (
 To get started:
 
 Clone the repository and install dependencies:
-  ```shell
-  pnpm install
-  ```
+```shell
+pnpm install
+```
 
 Start development mode (includes hot module reload):
-  ```shell
-  pnpm dev
-  ```
+```shell
+pnpm dev
+```
 
 Open [http://localhost:4321](http://localhost:4321) to view the site locally.
 
