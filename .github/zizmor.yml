@@ -1,0 +1,7 @@
+rules:
+  unpinned-uses:
+    config:
+      policies:
+        "*": hash-pin
+        # Trust this shared validator's maintained branch, not the owner's other repositories.
+        "setchy/renovate-config/*": ref-pin
