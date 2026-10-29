@@ -3,5 +3,5 @@ rules:
     config:
       policies:
         "*": hash-pin
-        # Trust this shared validator's maintained branch, not the owner's other repositories.
-        "setchy/renovate-config/*": ref-pin
+        # Trust only the maintained shared validator's workflow.
+        "setchy/renovate-config/.github/workflows/renovate-config-validator.yml": ref-pin
