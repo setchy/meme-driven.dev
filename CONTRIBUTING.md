@@ -31,35 +31,26 @@ There are three main checks:
 2. Type checking and diagnostics with [Astro][astro-website]
 3. Production build with [Astro][astro-website]
 
-```shell
-# Run biome to check linting and formatting
-pnpm lint:check
-
-# Run the CI variant with GitHub annotations
-pnpm lint:ci
-
-# Auto-fix linting and formatting
-pnpm lint
-
-# Check internal links in the built site
-pnpm links:check
-
-# Check internal and external links
-pnpm links:check:external
-
-# Check Astro and TypeScript for errors
-pnpm check
-
-# Build for production
-pnpm build
-```
+| Command                     | Description                                   |
+| --------------------------- | --------------------------------------------- |
+| `pnpm lint:check`           | Check lint only                               |
+| `pnpm lint`                 | Apply lint fixes                              |
+| `pnpm format:check`         | Check formatting only                         |
+| `pnpm format`               | Apply formatting                              |
+| `pnpm check`                | Run all static checks (Biome + Astro)         |
+| `pnpm check:fix`            | Apply Biome fixes, then run Astro diagnostics |
+| `pnpm check:astro`          | Check Astro and TypeScript only               |
+| `pnpm lint:ci`              | Combined CI gate with GitHub annotations      |
+| `pnpm links:check`          | Check internal links in the built site        |
+| `pnpm links:check:external` | Check internal and external links             |
+| `pnpm build`                | Build for production                          |
 
 `pnpm links:check` requires `pnpm build` first and uses [lychee](https://lychee.cli.rs)
 (`brew install lychee`). Settings live in [`lychee.toml`](lychee.toml).
 
 ### 🧹 Code Style & Conventions
 
-- We use [Biome][biome-website] for linting and formatting. Please run `pnpm lint:check` before submitting a PR.
+- We use [Biome][biome-website] for linting and formatting. Please run `pnpm check` before submitting a PR; `pnpm check:fix` applies all fixes locally.
 - Follow existing file and folder naming conventions.
 - Keep commit messages clear and descriptive.
 
