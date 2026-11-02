@@ -22,12 +22,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
       - name: Setup pnpm and Node
-        uses: pnpm/setup@v3.1.2
+        uses: pnpm/setup@fa36a5ef7dcdefc3a7cb25655c122e00cf6e636e # v3.1.2
         with:
           node-version-file: ".nvmrc"
           cache: true
@@ -38,7 +38,7 @@ jobs:
 
       - name: Check internal links
         if: github.event_name == 'pull_request' || github.event_name == 'push'
-        uses: lycheeverse/lychee-action@v2.9.0
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: >-
             --offline
@@ -49,7 +49,7 @@ jobs:
 
       - name: Check all links
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        uses: lycheeverse/lychee-action@v2.9.0
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: >-
             "${{ github.workspace }}/dist/**/*.html"
