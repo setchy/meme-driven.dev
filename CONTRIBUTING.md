@@ -41,12 +41,21 @@ pnpm lint:ci
 # Auto-fix linting and formatting
 pnpm lint
 
+# Check internal links in the built site
+pnpm links:check
+
+# Check internal and external links
+pnpm links:check:external
+
 # Check Astro and TypeScript for errors
 pnpm check
 
 # Build for production
 pnpm build
 ```
+
+`pnpm links:check` requires `pnpm build` first and uses [lychee](https://lychee.cli.rs)
+(`brew install lychee`). Settings live in [`lychee.toml`](lychee.toml).
 
 ### 🧹 Code Style & Conventions
 
