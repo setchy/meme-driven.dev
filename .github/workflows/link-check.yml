@@ -1,0 +1,58 @@
+name: Link check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Weekly on Monday at 07:00 UTC.
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3.1.2
+        with:
+          node-version-file: ".nvmrc"
+          cache: true
+          require-lockfile: true
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Check internal links
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            --offline
+            "${{ github.workspace }}/dist/**/*.html"
+          fail: true
+          failIfEmpty: true
+          jobSummary: true
+
+      - name: Check all links
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            "${{ github.workspace }}/dist/**/*.html"
+          fail: true
+          failIfEmpty: true
+          jobSummary: true

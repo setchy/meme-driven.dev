@@ -1,0 +1,10 @@
+# Shared lychee settings for checking the built site.
+# The offline/internal-only run adds --offline on top of this config.
+
+no_progress = true
+root_dir = "dist"
+
+max_concurrency = 4
+max_retries = 3
+retry_wait_time = 2
+timeout = 20

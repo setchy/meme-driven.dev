@@ -13,7 +13,9 @@
     "astro": "astro",
     "lint:check": "biome check",
     "lint:ci": "biome ci --reporter=github",
-    "lint": "biome check --fix"
+    "lint": "biome check --fix",
+    "links:check": "lychee --offline \"dist/**/*.html\"",
+    "links:check:external": "lychee \"dist/**/*.html\""
   },
   "devEngines": {
     "packageManager": {
