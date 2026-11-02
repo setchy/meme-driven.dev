@@ -35,6 +35,9 @@ There are three main checks:
 # Run biome to check linting and formatting
 pnpm lint:check
 
+# Run the CI variant with GitHub annotations
+pnpm lint:ci
+
 # Auto-fix linting and formatting
 pnpm lint
 

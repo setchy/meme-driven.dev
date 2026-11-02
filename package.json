@@ -12,6 +12,7 @@
     "prepare": "husky",
     "astro": "astro",
     "lint:check": "biome check",
+    "lint:ci": "biome ci --reporter=github",
     "lint": "biome check --fix"
   },
   "devEngines": {
