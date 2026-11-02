@@ -26,4 +26,4 @@ jobs:
           require-lockfile: true
 
       - name: Check Astro diagnostics
-        run: pnpm check
+        run: pnpm check:astro

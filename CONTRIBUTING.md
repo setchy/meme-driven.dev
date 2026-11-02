@@ -32,23 +32,32 @@ There are three main checks:
 3. Production build with [Astro][astro-website]
 
 ```shell
-# Run biome to check linting and formatting
+# Check lint only
 pnpm lint:check
 
-# Run the CI variant with GitHub annotations
-pnpm lint:ci
-
-# Auto-fix linting and formatting
+# Apply lint fixes
 pnpm lint
+
+# Check formatting only
+pnpm format:check
+
+# Apply formatting
+pnpm format
+
+# Run all static checks (Biome + Astro)
+pnpm check
+
+# Apply all fixes, then run Astro diagnostics
+pnpm check:fix
+
+# Check Astro and TypeScript only
+pnpm check:astro
 
 # Check internal links in the built site
 pnpm links:check
 
 # Check internal and external links
 pnpm links:check:external
-
-# Check Astro and TypeScript for errors
-pnpm check
 
 # Build for production
 pnpm build
@@ -59,7 +68,7 @@ pnpm build
 
 ### 🧹 Code Style & Conventions
 
-- We use [Biome][biome-website] for linting and formatting. Please run `pnpm lint:check` before submitting a PR.
+- We use [Biome][biome-website] for linting and formatting. Please run `pnpm check` before submitting a PR; `pnpm check:fix` applies all fixes locally.
 - Follow existing file and folder naming conventions.
 - Keep commit messages clear and descriptive.
 
