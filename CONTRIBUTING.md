@@ -31,37 +31,19 @@ There are three main checks:
 2. Type checking and diagnostics with [Astro][astro-website]
 3. Production build with [Astro][astro-website]
 
-```shell
-# Check lint only
-pnpm lint:check
-
-# Apply lint fixes
-pnpm lint
-
-# Check formatting only
-pnpm format:check
-
-# Apply formatting
-pnpm format
-
-# Run all static checks (Biome + Astro)
-pnpm check
-
-# Apply all fixes, then run Astro diagnostics
-pnpm check:fix
-
-# Check Astro and TypeScript only
-pnpm check:astro
-
-# Check internal links in the built site
-pnpm links:check
-
-# Check internal and external links
-pnpm links:check:external
-
-# Build for production
-pnpm build
-```
+| Command                     | Description                                   |
+| --------------------------- | --------------------------------------------- |
+| `pnpm lint:check`           | Check lint only                               |
+| `pnpm lint`                 | Apply lint fixes                              |
+| `pnpm format:check`         | Check formatting only                         |
+| `pnpm format`               | Apply formatting                              |
+| `pnpm check`                | Run all static checks (Biome + Astro)         |
+| `pnpm check:fix`            | Apply Biome fixes, then run Astro diagnostics |
+| `pnpm check:astro`          | Check Astro and TypeScript only               |
+| `pnpm lint:ci`              | Combined CI gate with GitHub annotations      |
+| `pnpm links:check`          | Check internal links in the built site        |
+| `pnpm links:check:external` | Check internal and external links             |
+| `pnpm build`                | Build for production                          |
 
 `pnpm links:check` requires `pnpm build` first and uses [lychee](https://lychee.cli.rs)
 (`brew install lychee`). Settings live in [`lychee.toml`](lychee.toml).
