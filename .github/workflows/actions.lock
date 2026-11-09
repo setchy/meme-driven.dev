@@ -12,7 +12,7 @@ workflows:
     '.github/workflows/renovate.yml': []
     '.github/workflows/sonarqube.yml':
         - 'actions/checkout@v7.0.1'
-        - 'sonarsource/sonarqube-scan-action@v8.4.0'
+        - 'sonarsource/sonarqube-scan-action@v8.4.1'
     '.github/workflows/website.yml': []
 dependencies:
     'actions/checkout@v7.0.1':
@@ -25,8 +25,8 @@ dependencies:
         commit: 'sha1-fa36a5ef7dcdefc3a7cb25655c122e00cf6e636e'
         owner_id: 21320719
         repo_id: 1235693694
-    'sonarsource/sonarqube-scan-action@v8.4.0':
-        ref: 'v8.4.0'
-        commit: 'sha1-4d1dc0c91ee400dcf8a6dddf2f705ac36542e304'
+    'sonarsource/sonarqube-scan-action@v8.4.1':
+        ref: 'v8.4.1'
+        commit: 'sha1-e805d875275f728fac1885b413934be6d7c63f65'
         owner_id: 545988
         repo_id: 366408409
