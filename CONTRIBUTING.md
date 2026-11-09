@@ -13,11 +13,13 @@ This project is a website presenting Meme Driven Development (MDD) — a novel (
 To get started:
 
 Clone the repository and install dependencies:
+
 ```shell
 pnpm install
 ```
 
 Start development mode (includes hot module reload):
+
 ```shell
 pnpm dev
 ```
@@ -27,6 +29,7 @@ Open [http://localhost:4321](http://localhost:4321) to view the site locally.
 ### 🧪 Checks
 
 There are three main checks:
+
 1. Linter & formatter with [Biome][biome-website]
 2. Type checking and diagnostics with [Astro][astro-website]
 3. Production build with [Astro][astro-website]
