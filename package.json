@@ -78,6 +78,6 @@
     "typescript": "6.0.3"
   },
   "lint-staged": {
-    "*.{js,ts,cjs,mjs,astro,md,yml,yaml}": "biome check --fix"
+    "*.{js,ts,cjs,mjs,astro,md,yml,yaml}": "biome check --fix --no-errors-on-unmatched"
   }
 }
