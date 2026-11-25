@@ -6,6 +6,10 @@ workflows:
     '.github/workflows/astro-check.yml':
         - 'actions/checkout@v7.0.1'
         - 'pnpm/setup@v3.2.0'
+    '.github/workflows/link-check.yml':
+        - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
+        - 'lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8'
+        - 'pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1'
     '.github/workflows/lint.yml':
         - 'actions/checkout@v7.0.1'
         - 'pnpm/setup@v3.2.0'
@@ -15,11 +19,26 @@ workflows:
         - 'sonarsource/sonarqube-scan-action@v8.5.1'
     '.github/workflows/website.yml': []
 dependencies:
+    'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1':
+        ref: 'v7.0.1'
+        commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
+        owner_id: 44036562
+        repo_id: 197814629
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
         commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
         owner_id: 44036562
         repo_id: 197814629
+    'lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8':
+        ref: 'v2.9.0'
+        commit: 'sha1-e7477775783ea5526144ba13e8db5eec57747ce8'
+        owner_id: 74027027
+        repo_id: 320929718
+    'pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1':
+        ref: 'v3.2.0'
+        commit: 'sha1-731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1'
+        owner_id: 21320719
+        repo_id: 1235693694
     'pnpm/setup@v3.2.0':
         ref: 'v3.2.0'
         commit: 'sha1-731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1'
